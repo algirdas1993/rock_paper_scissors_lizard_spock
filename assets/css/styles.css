@@ -1,3 +1,23 @@
 body {
     font-family: 'Oswald', sans-serif ;
+    text-align: center;
+    background-color: #EFECE1;
+    
 }
+#game-area {
+    background-color: #A7A466;
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 3%;
+    border: 10px solid #b87638;
+    border-radius: 15%;
+}
+button {
+    background-color: #b87638;
+    font-weight: 300;
+    font-size: 120%;
+    text-transform: uppercase;
+    border-radius: 10%;
+}
+
+

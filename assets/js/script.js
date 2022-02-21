@@ -5,12 +5,13 @@ const userImage = document.getElementById("player-hand");
 const computerImage = document.getElementById("computer-hand");
 const rulesMessage = document.getElementById("message");
 const posibleChoices = ["rock", "paper", "scissors", "lizard", "spock"];
-let computerChoice 
-let userChoice 
+let result
+let computerChoice
 
 for (let button of buttons) {
     button.addEventListener("click", function () {
         let userChoice = this.getAttribute("data-choice");
+        
         playGame(userChoice);
     })
 }
@@ -20,29 +21,22 @@ function playGame(userChoice) {
     userImage.src = `assets/images/${posibleChoices[userChoice]}.png`;
     userImage.alt = posibleChoices[userChoice];
     console.log(userChoice)
+    
     let computerChoice = Math.floor(Math.random() * 5);
-    console.log(computerChoice)
 
     computerImage.src = `assets/images/${posibleChoices[computerChoice]}.png`;
     computerImage.alt = posibleChoices[computerChoice];
+    console.log(computerChoice)
+
+    let result = checkWinner(posibleChoices[userChoice], posibleChoices[computerChoice]);
     
-    let result = checkWinner(userChoice, computerChoice);
-
-    updateScore(result)
+    updateScores(result)
+    
 }
-function checkWinner () {
-    if (userChoice === computerChoice) {
-        result = "0"
-        console.log(result)
-    }
-}
-function updateScore() {
-    if (result === "0") {
-        userScore + 54;
-        computerScore + 4;
-    } if (result === "1") {
-        userScore + 1;
-        computerScore + 0
-    }
+console.log(computerChoice)
+function updateScores() {
+    if (posibleChoices[userChoice] === posibleChoices[computerChoice])
+    alert(`Draw`)
 
 }
+
