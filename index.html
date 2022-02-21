@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oswald:wght@200;300;400&display=swap');</style>
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
 <body>
+    <header>
     <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-    <div id="player-choices">
-        <button><img class="gestures" src="/assets/images/rock.png" alt="Rock sign"></button>
-        <button><img class="gestures" src="/assets/images/paper.png" alt="Paper sign"></button>
-        <button><img class="gestures" src="/assets/images/scissors.png" alt="Scissors sign"></button>
-        <button><img class="gestures" src="/assets/images/lizard.png" alt="Lizard sign"></button>
-        <button><img class="gestures" src="/assets/images/spock.png" alt="Spock sign"></button>
-    </div>
-    <div id="hands">
-        <div id="player">player choice</div>
-        <div id="computer">computer choice</div>
-    </div>
-    <div id="result"> 
-        <p>results</p>
-    </div>
+    </header>
+    <section id="game-area">
+        <div id="player-choices">
+            <h3>Make your choice</h3>
+            <button aria-label="Rock" data-choice="0" class="buttons">Rock</button>
+            <button aria-label="Paper" data-choice="1" class="buttons">Paper</button>
+            <button aria-label="Scissors" data-choice="2" class="buttons">Scissors</button>
+            <button aria-label="Lizard" data-choice="3" class="buttons">Lizard</button>
+            <button aria-label="Spock" data-choice="4" class="buttons">Spock</button>
+        <div id="hands">
+            <div id="player">
+                <h3 class="scores">Your score: <span id="player-score">0</span></h3>
+                <img id="player-hand" src="/assets/images/combine.png" alt="All posible choices">
+            </div>
+            <div id="computer">
+                <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
+                <img id="computer-hand" src="/assets/images/combine.png" alt="All posible choices">
+        </div>
+    </section>
     <div>
         <h2>Rules:</h2>
         <p>game rules</p>

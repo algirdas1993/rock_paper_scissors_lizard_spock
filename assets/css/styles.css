@@ -1,21 +1,3 @@
 body {
     font-family: 'Oswald', sans-serif ;
-    /* text-align: center; */
-}
-#hands {
-    display: flex;
-}
-#player {
-    height: 400px;
-    width: 400px;
-    background-color: aquamarine;
-    flex: 1;
-    /* float: left; */
-}
-#computer {
-    height: 400px;
-    width: 400px;
-    background-color: rgb(179, 182, 41);
-    flex: 2;
-    /* float: right; */
 }
