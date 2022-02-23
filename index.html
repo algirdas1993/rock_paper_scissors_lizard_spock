@@ -21,21 +21,24 @@
             <button aria-label="Lizard" data-choice="3" class="buttons">Lizard</button>
             <button aria-label="Spock" data-choice="4" class="buttons">Spock</button>
         <div id="hands">
+            <!-- This div display user choice and score -->
             <div id="player">
                 <h3 class="scores">Your score: <span id="player-score">0</span></h3>
                 <img id="player-hand" src="/assets/images/combine.png" alt="All posible choices">
             </div>
+            <!-- This div displays computer choice and score -->
             <div id="computer">
                 <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
                 <img id="computer-hand" src="/assets/images/combine.png" alt="All posible choices">
         </div>
-        <span id="message">message</span>
+        <!-- This span is for message, that shows up after hand is played ['Draw!', 'You won!' or 'You lost!']  -->
+        <span id="message"></span>
     </section>
-    <div>
+    <footer>
         <h2>Rules:</h2>
         <p>Scissors cut paper | Paper covers rock | Rock crushes lizard | Lizard poisons Spock | Spock smashes scissors</p>
-        <p>Scissors decapitates lizard | Lizard eats paper | Paper disproves Spock| Spock vapourizes rock | Rock crushes scissors</p>
-    </div>
+        <p>Scissors decapitates lizard | Lizard eats paper | Paper disproves Spock | Spock vapourizes rock | Rock crushes scissors</p>
+    </footer>
     
     <script src="/assets/js/script.js"></script>
 </body>
