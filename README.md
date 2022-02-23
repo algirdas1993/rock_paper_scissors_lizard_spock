@@ -5,14 +5,14 @@ This site is targeted towards kids and adults, who want to:
 - Practice
 - Have fun playing.
 
- ![image info](/assets/images/forREADME/amIResponsive.png)
+ ![image info](assets/images/forREADME/amIResponsive.png)
 
 ## Features
 
 ### Header
  - Clearly tells user what kind of game this is.
 
- ![image info](/assets/images/forREADME/header.png)
+ ![image info](assets/images/forREADME/header.png)
 
 ### Game area
 - Contains buttons with options for the user:
@@ -28,12 +28,12 @@ This site is targeted towards kids and adults, who want to:
     - You lost!
     - Draw!
 
-![image info](/assets/images/forREADME/gameArea.png)
+![image info](assets/images/forREADME/gameArea.png)
 
 ### Footer
 - Displays game rules 
 
-![image info](/assets/images/forREADME/footer.png)
+![image info](assets/images/forREADME/footer.png)
 
 ### Future implements 
 - include functionality, that is based on sertain amount of hands, to determine winner, by comparing scores.
@@ -44,17 +44,28 @@ This site is targeted towards kids and adults, who want to:
 - I confirmed that all element are readable and easy to understand.
 - I confirmed that colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
-![image info](/assets/images/forREADME/lighthouseCheck.png)
+![image info](assets/images/forREADME/lighthouseCheck.png)
 
 ## Validator Testing
 
 - HTML - No errors returned when passing through the official W3C validator
 - CSS - No errors returned when passing through the official W3C (Jigsaw) validator
 
+## Bugs
+
+### Fixed bugs
+- When I deployed project to GitHub Pages, I discovered, that start pictures and script were not loading.
+- I discovered, that this happened because i used absolute file path in my code:
+
+    ```<script src="/assets/js/script.js"></script>``` 
+
+- Removing ```/``` in yhe start of the source fixed the problem.
+
+
 ## Deployment
 
 - The site was deployed to GitHub pages
-- [The live link can be found here]()
+- [The live link can be found here](https://algirdas1993.github.io/rock_paper_scissors_lizard_spock/)
 
 ## Credits
 
