@@ -2,24 +2,37 @@ body {
     font-family: 'Oswald', sans-serif ;
     text-align: center;
     background-color: #EFECE1;
+    font-size: 110%;
     
 }
 /* styles for all game area */
 #game-area {
     background-color: #A7A466;
+    max-height: 700px;
     width: 70%;
     margin-left: 15%;
     padding-bottom: 3%;
     border: 10px solid #b87638;
     border-radius: 15%;
 }
-/* styles for player choice buttons */
+/* Makes player and computer choise divs display next to each other  */
+#hands div{
+    display: inline-block;
+    margin: 0 2% 0 2%;
+}
+/* styling for user choice buttons */
 button {
     background-color: #b87638;
     font-weight: 300;
     font-size: 120%;
     text-transform: uppercase;
     border-radius: 10%;
+}
+#message {
+    font-size: 120%;
+}
+footer {
+    font-size: 110%;
 }
 
 
